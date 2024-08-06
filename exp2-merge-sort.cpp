@@ -54,6 +54,7 @@ void mergeSort(int array[], int left, int right){
 }
 
 int main(){
+    cout << "Manish Choudhary\nURN: 2203495\n";
     int array[] = {1,3,5,9,7,2,8,4,6};
     int size = sizeof(array) / sizeof(array[0]);
 
