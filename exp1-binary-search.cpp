@@ -17,7 +17,6 @@ int binary_search(int arr[], int beg, int end, int value){
 }
 
 int main(){
-    cout << "Manish Choudhary\nURN: 2203495\n";
     int n;
     cout<<"Enter size of array: ";
     cin>>n;
