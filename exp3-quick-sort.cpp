@@ -15,11 +15,12 @@ int partition(int array[], int l, int r){
 }
 
 void quickSort(int array[], int l, int r){
-    if (l<r){
+    if (l>=r)
+        return;
     int m = partition(array,l,r);
     quickSort(array,l,m -1);
     quickSort(array,m+1,r);
-    }
+    
 
 }
 int main(){
