@@ -28,7 +28,7 @@ int main(){
     int ele;
     char c = 'y';
     while(c == 'y' || 'Y'){
-        cout <<"Array to find: ";
+        cout <<"Roll no. to find: ";
         cin >> ele;
         int pos = binary_search(arr, 0, n - 1, ele);
 
@@ -38,6 +38,7 @@ int main(){
             cout << "Roll No. not found!";
         cout << "Do you want to continue?(y/n): ";
         cin >> c;
+        cout << "\n\n\n\n";
     }
     
 }
