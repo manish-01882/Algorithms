@@ -4,20 +4,22 @@ using namespace std;
 int partition(int array[], int l, int r){
     int p = array[r];
     int i= l-1;
-    for(int j=0; j<=r-1; ++j){
-        ++i;
-        swap(array[i],array[j]);
+    for(int j=l; j<=r-1; ++j){
+        if(array[j] <= p){
+            ++i;
+            swap(array[i],array[j]);
+        }
     }
     swap(array[i+1],array[r]);
     return i+1;
 }
 
 void quickSort(int array[], int l, int r){
-    if (l>=r)
-        return;
+    if (l<r){
     int m = partition(array,l,r);
     quickSort(array,l,m -1);
     quickSort(array,m+1,r);
+    }
 
 }
 int main(){
