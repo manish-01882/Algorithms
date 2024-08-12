@@ -24,7 +24,15 @@ void quickSort(int array[], int l, int r){
 
 }
 int main(){
-    int array[] ={1,3,2,6,8,4,9,5,7,11,13,12,10};
+    int n;
+    cout<<"Enter size of array: ";
+    cin>>n;
+
+    int array[n];
+    cout<<"Enter Roll No. in array: ";
+    for(int i=0; i<n; ++i)
+        cin>>array[i];
+
     int size = sizeof(array) / sizeof(array[0]);
     quickSort(array,0,size-1);
     for(int i=0; i<size; ++i){

@@ -54,7 +54,13 @@ void mergeSort(int array[], int left, int right){
 }
 
 int main(){
-    int array[] = {1,3,5,9,7,2,8,4,6};
+    int n;
+    cout<<"Enter size of array: ";
+    cin>>n;
+    int array[n];
+    cout<<"Enter Roll No. in array: ";
+    for(int i=0; i<n; ++i)
+        cin>>array[i];
     int size = sizeof(array) / sizeof(array[0]);
 
     mergeSort(array, 0, size-1);
