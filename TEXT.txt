@@ -1,0 +1,20 @@
+MST_PRIM(G,w,r)
+    for each u belongs to G.v
+        u.key = INFINITY
+        u.parent = NILL
+    r,key = 0
+    Q = G.v
+
+    while Q != 0
+        u = EXTRACT_MIN(Q)
+        for each v belongs to G.adj[u]
+    if v belongs to Q and w(u,v) < v.key
+        v.parent = u
+        v.key = w(u,v)
+
+
+
+
+
+
+

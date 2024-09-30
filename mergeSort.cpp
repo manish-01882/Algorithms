@@ -1,8 +1,8 @@
-#include<iostream>
+// #include<iostream>
 using namespace std;
 
 
-void merge(int array[], int left, int middle,int right){
+void merge(float array[], int left, int middle,int right){
     int n1 = middle-left+1;
     int n2 = right-middle;
 
@@ -20,7 +20,7 @@ void merge(int array[], int left, int middle,int right){
     int k=left;     //For main array
 
     while(i<n1 && j<n2){
-        if(leftArray[i]<rightArray[j]){
+        if(leftArray[i]>rightArray[j]){
             array[k] = leftArray[i];
             ++i;
         }
@@ -44,7 +44,7 @@ void merge(int array[], int left, int middle,int right){
 
 }
 
-void mergeSort(int array[], int left, int right){
+void mergeSort(float array[], int left, int right){
     if(left < right){
         int middle = (left + right)/2;
         mergeSort(array,left,middle);
@@ -53,19 +53,19 @@ void mergeSort(int array[], int left, int right){
     }
 }
 
-int main(){
-    int n;
-    cout<<"Enter size of array: ";
-    cin>>n;
-    int array[n];
-    cout<<"Enter Roll No. in array: ";
-    for(int i=0; i<n; ++i)
-        cin>>array[i];
-    int size = sizeof(array) / sizeof(array[0]);
+// int main(){
+//     int n;
+//     cout<<"Enter size of array: ";
+//     cin>>n;
+//     int array[n];
+//     cout<<"Enter Roll No. in array: ";
+//     for(int i=0; i<n; ++i)
+//         cin>>array[i];
+//     int size = sizeof(array) / sizeof(array[0]);
 
-    mergeSort(array, 0, size-1);
-    for(int i=0;i<size; ++i){
-        cout << array[i] << " ";
-    }
-    cout << endl;
-}
+//     mergeSort(array, 0, size-1);
+//     for(int i=0;i<size; ++i){
+//         cout << array[i] << " ";
+//     }
+//     cout << endl;
+// }
