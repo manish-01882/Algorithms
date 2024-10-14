@@ -16,5 +16,16 @@ MST_PRIM(G,w,r)
 
 
 
-
+      // {{INF, 9, 7, 3, 2, INF, INF, INF, INF, INF, INF, INF},
+      //  {INF, INF, INF, INF, INF, 4, 2, 1, INF, INF, INF, INF},
+      //  {INF, INF, INF, INF, INF, 2, 7, INF, INF, INF, INF, INF},
+      //  {INF, INF, INF, INF, INF, INF, INF, 11, INF, INF, INF, INF},
+      //  {INF, INF, INF, INF, INF, INF, 11, 8, INF, INF, INF, INF},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, 6, 5, INF, INF},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, 4, 3, INF, INF},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, INF, 5, 6, INF},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 4},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 2},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 5},
+      //  {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0}};
 
